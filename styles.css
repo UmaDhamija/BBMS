@@ -4,6 +4,7 @@
 }
 
 .header{
+  font-family: 'Poiret One';
   text-align: center;
   color: #60EBE3;
 }
@@ -20,6 +21,19 @@
   position: fixed;
 }
 
+.each-week{
+  background-color: #00423B;
+  border: 5px solid #B0FCFF;
+  border-width: thin;
+}
+
+.right-side{
+  float: right;
+  overflow-y: scroll;
+  margin-left: 50%;
+  width: 900px;
+}
+
 a{
   padding: 0px;
   text-decoration: none;
@@ -27,37 +41,36 @@ a{
   color: #95D4E8;
 }
 
+.right-side a{
+  padding: 0px;
+  text-decoration: none;
+  text-align: left;
+  color: #95D4E8;
+  background-color: #00423B
+}
+
 span{
   padding: 0px;
+  background-color: #00423B
 }
 
 a:hover{
   color: #98FFD5;
 }
 
-.right-side, .line{
-  background-color: grey;
-}
-
-
-.right-side{
-  float: right;
-  overflow-y: scroll;
-  margin-left: 50%;
-}
-
-.headings{
+.writing, li{
   color: #38C4EB;
-  border: 5px solid #B0FCFF;
-  border-width: thin;
-}
-p{
-  color: #69BDFF;
-  text-align: left;
-}
-h1{
-  text-align: center;
+  background-color: #00423B;
+  font-family: 'Cormorant';
+  font-size: 20px;
 }
 
-/* positioning
-display */
+.right-side p{
+  text-align: left;
+  background-color: #00423B
+}
+
+.right-side h1{
+  text-align: center;
+  background-color: #00423B
+}
