@@ -5,17 +5,34 @@
     <link href="https://fonts.googleapis.com/css?family=Cormorant|Poiret+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Sensor for Week I and II</title>
+    <style>
+      .sensor-content{
+        display: flex;
+        justify-content: center;
+        padding: 50px;
+      }
+
+
+    </style>
   </head>
   <body>
+    <a href="index.html" class="header">Home</a>
     <h1 class="header">Week I</h1>
-    <div class="">
-      <video src="recreatingSwitchLight.mp4" autoplay poster="recreatingSwitchLight"></video>
+    <p class="writing">First: I tried to recreate what we learned in class and built a regular LED sensor using a microchip, push button switch, and 22 ohm resistor.
+    <br><br>Second: Once I figured out how to create a regular LED circuit, I tried to use a light sensor switch instead of push button, which has included resistance to it. And it worked really well, dimming the light as I covered it and increased it as it sensed more light...</p>
+
+    <div class="sensor-content">
+      <video src="recreatingSwitchLight.mp4" autoplay poster="recreatingSwitchLight" style="width: auto; height: 700px; background-color: #00423B;">
+      <source src="recreatingSwitchLight.mp4" type="video/">  </video>
+      <video src="LightSensorSwitch!.mp4" autoplay poster="Light sensor switch" style="width: auto; height: 700px; background-color: #00423B;"></video>
     </div>
+
     <h1 class="header">Week II</h1>
-    <div class="">
-      <img src="code.png" alt="The Code" style="width: 500px;">
-      <video src="LightSensorSwitch!.mp4" autoplay poster="Light sensor switch"></video>
-      <video src="nightlight.mp4" autoplay poster="Light sensor switch"></video>
+    <p class="writing">I then connected a wire from the 3rd point to the LED which was connected to another resistor to prevent a short circuit. I ended up with a circuit that would turn on LED light below the light threshold and then turn the light off above the threshold If the light sensor was shined on with a flashlight! I thought this was pretty cool. Hopefully, I’ll get the chance to include more LEDs and create an entire pathway with this circuit which could potentially look like an airplane path light at night; and controlled without hands. With the help of Professor Fitzgerald, I learned to create a night-light of sort. I connected a 5V resistor to ground and the light sensor to power. In Arduino IDE, I used the following code:</p>
+
+    <div class="sensor-content">
+      <img src="code.png" alt="The Code" style="width: auto; height: 700px;">
+      <video src="nightlight.mp4" autoplay poster="Light sensor switch" style="width: auto; height: 700px; background-color: #00423B;"></video>
     </div>
   </body>
 </html>
